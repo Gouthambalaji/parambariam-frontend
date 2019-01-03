@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .button {
+  background-color: #20B0DE;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+            body {
+    background-image: url(FINAL_07_jpeg.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+  
+}
+
+    
+            function resetForm() {
+                        document.getElementById("formx").reset();
+                    }
+            h2{
+                color: blueviolet;
+            }
+            table{
+            background-color:aquamarine;
+            
+        }
+            td{
+                color:blueviolet;
+            }
+.button:hover {
+  background-color: aquamarine;
+}</style>
+    <title>Register</title>
+    </head>
+    <body>
+    <center>
+        <h2 style="z-index: 12px; text-shadow: 25px;font-family: sans-serif">Personal Details</h2>
+        <form method="post" id="formx" name="Personal Info" action="store.jsp">
+            <table>
+            <tbody>
+                <tr>
+                <td> Father Name </td>
+                    <td><input type="text" name="Fathername" placeholder="Enter your  father name" value=""/></td>
+                </tr>
+                <tr>
+                <td>Father Last Name</td>
+                    <td><input type="text" name="fatherlast" placeholder="Enter your father last name" value=""/></td>
+                </tr>
+                <tr>
+                <td>Mother Name</td>
+                    <td><input type="text" name="mothername" placeholder="Enter your mother name" value=""/></td>
+                </tr>
+                <tr>
+                    <td>Mother Last Name</td>
+                    <td><input type="text" name="motherlastname" placeholder="Enter your email" value=""/></td>
+                </tr>
+                <tr>
+                <td>Spouse Name</td>
+                    <td><input type="text" name="spouse" placeholder="Enter your spouse name" value=""></td>
+                </tr>
+                <tr>
+                    <td>Brother Name</td>
+                    <td><input type="text" name="brother" placeholder="Enter your brother name" value=""></td>
+                    
+                </tr>
+                <tr>
+                <td>Sister Name</td>
+                    <td><input type="text" name="sister" placeholder="Enter your sister name" value=""/></td>
+                </tr>
+                                 
+                </tbody>
+            </table>    
+            <input type="reset" value="edit">
+            <input type="submit" value="Save">
+              <input type="submit" value="cancel" onclick="main.html">
+        </form>
+        
+        </center>
+    
+    </body>
+</html>
+
+

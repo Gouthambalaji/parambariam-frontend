@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .button {
+  background-color: #20B0DE;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+            html,body {
+	height: 100%;
+}
+
+            h2{text-shadow: 0 0 3px aquamarine, 0 0 5px #0000FF;}
+            
+body {
+	margin: 0;
+    background-image: url(modern-family-2v.jpg);
+    
+    height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+            .btn {
+    tab-size: 30%;
+                border-width: medium;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px 0px;
+  opacity: 0.95;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 15px;
+  text-decoration: none; /* remove underline from anchors */
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #1E90FF;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #1E90FF;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #1E90FF;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+            input[type=email] {
+  padding: 12px 20px;
+                color:1E90FF;
+  margin: 8px 0;
+background-color: #FFF;
+                border-radius: 4px;
+  box-sizing: border-box;
+            }
+    input[type=password]{
+  padding: 12px 20px;
+  margin: 8px 0;
+color:1E90FF;
+background-color: #FFF;
+border-radius: 4px;
+  box-sizing: border-box;
+            }
+input[type=text]{
+    color: #1E90FF;
+    padding: 12px 20px;
+  margin: 8px 0;
+    background-color: #FFF;
+  box-sizing: content-box;
+    border-radius: 4px;
+}
+            input[type=submit] {
+  background-color: #1E90FF;
+  color: white;
+  cursor: pointer;
+}
+input[type=reset] {
+  background-color: #1E90FF;
+  color: white;
+  cursor: pointer;
+}
+
+.col {
+  float: center;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+           
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+            .fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+            input[type=submit] {
+  background-color: #1E90FF;
+  color: white;
+  cursor: pointer;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #1E90FF;
+  border-radius: 0px 0px 4px 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #1E90FF;
+}
+input[type=reset] {
+  background-color: #1E90FF;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #1E90FF;
+}
+
+table {
+	width: 820px;
+	border-collapse: inherit;
+	overflow: visible;
+	box-shadow: 20px 5px 20px rgba(1,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+    text-decoration-color: aquamarine
+	background-color: rgba(255,255,255,0.2);
+	color: #2420A2;
+}
+
+th {
+	text-align: left;
+}
+thead {
+    
+	th {
+		background-color: #55608f;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
+@media screen and (max-width: 650px) {
+    .col {
+    width: 45%;
+    margin-top: 0;
+  }
+            }
+</style>
+    <title>Register</title>
+    </head>
+    <body>
+    <center>
+        <h2>User Registration</h2>
+        <form method="post" id="formx" name="Reg" action="store.jsp">
+            <table>
+            <tbody>
+                <tr>
+                <td>First Name </td>
+                    <td><input type="text" name="firstname" placeholder="Enter your firstname" value=""/></td>
+                </tr>
+                <tr>
+                <td>Last Name</td>
+                    <td><input type="text" name="lastname" placeholder="Enter your Lastname" value=""/></td>
+                </tr>
+                <tr>
+                <td>Family Name</td>
+                    <td><input type="text" name="familyname" placeholder="Enter your Family Name" value=""/></td>
+                </tr>
+                <tr>
+                    <td>Email-ID</td>
+                    <td><input type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your Email ID" value=""/></td>
+                </tr>
+                <tr>
+                <td>Family ID</td>
+                    <td><input type="text" name="familyid" placeholder="Enter your Family ID" value=""></td>
+                </tr>
+                
+                <tr>
+                <td>Phone Number</td>
+                    <td><input type="text" name="phonenumber" placeholder="Enter your Phone Number" value=""/></td>
+                </tr>
+                 <tr><td>Password</td>
+                    <td><input type="password" name="passdd" placeholder="Enter your password" value=""/></td>
+                </tr>
+                
+                </tbody>
+            </table> 
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="register.html" class="btn">Register</a>
+    </div>
+    </div>
+            </div>
+        <div class="bottom-container">
+      <div class="col">
+      <a href="reset.php" class="btn">Reset</a>
+      </div>
+  </div>
+
+        </form>
+        <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Register with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Register with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Register with Google+
+        </a>
+      </div>
+        </center>
+    </body>
+    <footer>
+        <right>
+    <p class="copyright-agileinfo" color="blue"> &copy; Paambariyam. All Rights Reserved </p>
+        </right>
+    </footer>
+</html>

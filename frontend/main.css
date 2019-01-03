@@ -1,0 +1,111 @@
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+.container {
+  max-width: 960px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-top-gray { border-top-color: #adb5bd; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lh-condensed { line-height: 1.25; }
+
+
+body {
+    background: #3EB6A7;
+    box-shadow: 2px 2px 2px rgba(0.02, 0.04, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 2.5;
+    margin: 0 ;
+    max-width: 940px;
+    padding: 6px 6px 6px;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:aliceblue;
+    font-weight: 760;
+    line-height: 1.3;
+}
+
+h2 {
+    color:aquamarine;
+    border-color: aqua;
+    margin-top: 1.3em;
+}
+
+a { 
+    font-size: 30px;
+    font-family: "Times New Roman",Helvetica Neue;
+    color: #CBF43E;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(.22, .23, .78, .36) 1;
+    background: transparent;
+    background-image: imageurl(https://cdn.pixabay.com/photo/2015/09/27/21/25/family-961287_960_720.jpg);
+    background-repeat: repeat-x;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 75%;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+left{
+    padding: 2em 2em 4em;
+
+
+}
+.navbar-header {
+    color:#1E90FF;
+}
+
+.navbar-inverse {
+    color:#1E90FF;
+}
+
+.navbar {
+    color:#1E90FF;
+}
+
+.container-fluid {
+    color:#1E90FF;
+}
